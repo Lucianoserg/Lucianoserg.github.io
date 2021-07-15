@@ -1,0 +1,309 @@
+html *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* HEADER */
+
+.header{
+    padding: 10px 10px 0 10px;
+    display: grid;
+    gap: 50px;
+}
+
+.principio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 769px){
+    .principio{
+        padding-right: 5vw;
+    }
+}
+
+.principio img{
+    width: 10vw;
+}
+
+.nav{
+    display: none;
+}
+
+@media (min-width: 769px){
+    .nav{
+        display: flex;
+        gap: 6vw;
+    }
+}
+
+.menu-hamburguesa{
+    height: 32px;
+    display: grid;
+    gap: 7px;
+}
+
+@media (min-width: 769px){
+    .menu-hamburguesa{
+        display: none;
+    }
+}
+
+.menu-hamburguesa div{
+    width: 36px;
+    height: 6px;
+    background-color: black;
+}
+
+.titulo h1{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 769px){
+    .titulo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 5vw;
+    }
+
+    .titulo h1{
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .titulo .foto-perfil{
+        width: 50%;
+    }
+}
+
+.foto-perfil{
+    background-image: url("../assets/undraw_Hello_re_3evm.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 435px;
+    min-height: 300px;
+}
+
+/* MAIN DESCRIPTION */
+
+.description{
+    background-color: black;
+    color: white;
+    padding: 55px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (min-width: 769px){
+    .description{
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 15vh 30vh;
+    }
+}
+
+.description div h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+@media (min-width: 769px){
+    .description div h2{
+        margin-bottom: 20px;
+    }
+}
+
+.description div p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.description img{
+    width: 80px;
+    height: 80px;
+}
+
+@media (min-width: 769px){
+    .description img{
+        width: 20vw;
+        height: 20vh;
+    }
+}
+
+/* MAIN SERVICE */
+
+.service{
+    padding: 60px 50px;
+    display: grid;
+    gap: 10vh;
+}
+
+.service h3{
+    text-align: center;
+    font-size: 32px;
+}
+
+.service-order{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+@media (min-width: 769px){
+    .service-order{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sales, .marketing-digital, .desarrollo-web{
+        width: 33%;
+        align-self: flex-start;
+    }
+}
+
+.service-order img{
+    margin-bottom: 15px;
+}
+
+.service-order h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-order p{
+    font-size: 16px;
+}
+
+/* MAIN FORM */
+
+.contact{
+    background-color: black;
+    color: white;
+    padding: 70px 20px;
+}
+
+@media (min-width: 769px){
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact h3{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 35px ;
+}
+
+@media (min-width: 769px){
+    .contact h3{
+        margin-right: 7vw;
+    }
+}
+
+.form label{
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form input, textarea, button{
+    width: 100%;
+}
+
+.form input{
+    height: 45px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.form textarea{
+    height: 20vh;
+    margin-bottom: 8vh;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+.form button{
+    background-color: #FFD953;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* FOOTER COPY*/
+
+.footer{
+    background-color: #DBDBDB;
+    padding: 40px 20px;
+}
+
+@media (min-width: 769px){
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15vw;
+        padding-left: 5vw;
+    }
+}
+
+.copy{
+    text-align: left;
+    margin-bottom: 15vh;
+}
+
+.copy img{
+    width: 77px;
+    height: 77px;
+}
+
+.copy p{
+    font-size: 13px;
+}
+
+/* FOOTER COPY*/
+
+.redes{
+    display: grid;
+    gap: 5vh;
+}
+
+.redes img{
+    width: 27px;
+    height: 27px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: black;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.instagram, .linkedin, .github{
+    display: flex;
+    align-items: center;
+}
+
+
